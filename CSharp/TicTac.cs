@@ -4,7 +4,6 @@ namespace TicTacToe
 {
     internal class TicTac
     {
-        
            public static char[] Alan = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
            private static void Board()
@@ -48,6 +47,7 @@ namespace TicTacToe
             { return 1; }
 
 
+               
             //sol üstten çarpraz
             else if (Alan[1] == Alan[5] && Alan[5] == Alan[9])
             { return 1; }
@@ -66,23 +66,14 @@ namespace TicTacToe
 
         }
            public static int GetWinControl() { return WinControl(); }
-
-
            public static void SayiAl()
         {
             Program.Secilen = int.Parse(Console.ReadLine());
             if ((Program.Secilen > TicTac.Alan.Length || Program.Secilen <= 0))
-            { Console.WriteLine("Lütfen yukarıdaki tahtada olan bir bölgeyi seçin!");
+            {
+                Console.WriteLine("Lütfen yukarıdaki tahtada olan bir bölgeyi seçin!");
                 SayiAl();
             }
-            else {}
-
         }
-            
-
-
-
-        
-
     }
 }
