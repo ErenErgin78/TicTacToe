@@ -48,10 +48,10 @@ namespace TicTacToe
             { return 1; }
 
 
-            //sağ üstten çarpraz
+            //sol üstten çarpraz
             else if (Alan[1] == Alan[5] && Alan[5] == Alan[9])
             { return 1; }
-            //sol üstten çarpraz 
+            //sağ üstten çarpraz 
             else if (Alan[3] == Alan[5] && Alan[5] == Alan[7])
             { return 1; }
 
